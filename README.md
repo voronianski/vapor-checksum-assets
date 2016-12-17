@@ -1,10 +1,14 @@
 # Vapor Checksum Assets
 
+![Swift](http://img.shields.io/badge/swift-3.0-brightgreen.svg)
+![Platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20OS%20X-blue.svg)
+![Package Managers](https://img.shields.io/badge/package%20managers-SwiftPM-yellow.svg)
+
 > Add checksums of `.js`/`.css` files to url querystring in [Vapor](https://vapor.codes/) applications for cache busting.
 
 ## Installation
 
-Via Swift Package Manager
+Via Swift Package Manager:
 
 ```swift
 .Package(url: "https://github.com/voronianski/vapor-checksum-assets.git", majorVersion: 0, minor: 1)
@@ -47,7 +51,7 @@ class ClientController {
   }
 
   func index(_ req: Request) throws -> ResponseRepresentable {
-    // easy to add separate methods for production and development
+    // it's easy to add separate methods for production and development
     return try serve()
   }
 
