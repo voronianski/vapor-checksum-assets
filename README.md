@@ -11,7 +11,7 @@
 Via Swift Package Manager:
 
 ```swift
-.Package(url: "https://github.com/voronianski/vapor-checksum-assets.git", majorVersion: 0, minor: 4)
+.Package(url: "https://github.com/voronianski/vapor-checksum-assets.git", majorVersion: 1)
 ```
 
 ## Usage
@@ -20,6 +20,7 @@ Module has a minimal API:
 
 ```swift
 import Vapor
+import VaporChecksumAssets
 
 let drop = Droplet()
 
@@ -42,6 +43,7 @@ Controller that uses `ChecksumAssetsManager` to versionify assets and pass urls 
 
 import HTTP
 import Vapor
+import VaporChecksumAssets
 
 class ClientController {
   let cs: ChecksumAssetsManager
@@ -81,7 +83,7 @@ drop.run()
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Example</title>
+    <title>Example template</title>
     <link rel="stylesheet" href="#(maincss)" type="text/css" />
   </head>
 

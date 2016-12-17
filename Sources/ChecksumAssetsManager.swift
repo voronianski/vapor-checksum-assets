@@ -2,11 +2,11 @@ import Foundation
 import Vapor
 import Cache
 
-class ChecksumAssetsManager {
+public final class ChecksumAssetsManager {
   let drop: Droplet
-  private let cache: CacheProtocol
+  let cache: CacheProtocol
 
-  init(_ drop: Droplet) {
+  public init(_ drop: Droplet) {
     self.drop = drop
     cache = MemoryCache()
   }
