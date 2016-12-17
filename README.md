@@ -11,7 +11,7 @@
 Via Swift Package Manager:
 
 ```swift
-.Package(url: "https://github.com/voronianski/vapor-checksum-assets.git", majorVersion: 0, minor: 1)
+.Package(url: "https://github.com/voronianski/vapor-checksum-assets.git", majorVersion: 0, minor: 2)
 ```
 
 ## Usage
