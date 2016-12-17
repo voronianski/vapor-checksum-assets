@@ -35,7 +35,7 @@ print(js)
 
 ## Example
 
-Controller example that uses `ChecksumAssetsManager` to versionify assets and pass urls to [Leaf](https://github.com/vapor/leaf) template:
+Controller that uses `ChecksumAssetsManager` to versionify assets and pass urls to [Leaf](https://github.com/vapor/leaf) template:
 
 ```swift
 // ./Sources/App/main.swift
